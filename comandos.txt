@@ -1,0 +1,4 @@
+npm init -y -----> inicia o Node
+npm install -----> atualiza todas as pendencias como o node_modules que fica no gitignore
+node #NomeDoArquivo -----> executa um arquivo JS em Node
+    -> ctrl + c ---------> finaliza a aplicação
