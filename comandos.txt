@@ -1,4 +1,19 @@
-npm init -y -----> inicia o Node
-npm install -----> atualiza todas as pendencias como o node_modules que fica no gitignore
-node #NomeDoArquivo -----> executa um arquivo JS em Node
-    -> ctrl + c ---------> finaliza a aplicação
+npm init -y -----------------------> inicia o Node
+npm install -----------------------> atualiza todas as pendencias como o node_modules que fica no gitignore
+node #NomeDoArquivo ---------------> executa um arquivo JS em Node
+    -> ctrl + c -------------------> finaliza a aplicação
+node --watch #nome do Arquivo -----> executa um arquivo JS em Node reiniciando automaticamente
+
+Os comandos podem ser colocados dessa forma no package.json:
+"scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node --watch App.js"
+  },
+Dessa forma só precisa de dar um npm run dev no terminal para rodar o programa.
+
+Para usar o ES Modules é preciso colocar "type": "module", no package.json, como nesse exemplo:
+  "name": "helloworld2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "App.js",
+  "type": "module",
