@@ -3,6 +3,7 @@ npm install -----------------------> atualiza todas as pendencias como o node_mo
 node #NomeDoArquivo ---------------> executa um arquivo JS em Node
     -> ctrl + c -------------------> finaliza a aplicação
 node --watch #nome do Arquivo -----> executa um arquivo JS em Node reiniciando automaticamente
+npm install fastify ---------------> instala o framework Fastify
 
 Os comandos podem ser colocados dessa forma no package.json:
 "scripts": {
