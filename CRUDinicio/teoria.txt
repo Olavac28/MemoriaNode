@@ -1,0 +1,10 @@
+CRUD (Create, Read, Update e Delete)
+
+Métodos do CRUD:
+POST -> criar um recurso
+GET -> buscar dados
+PUT -> substituir/atualizar um recurso inteiro
+DELETE -> excluir um recurso
+PATCH -> altera parcialmente um recurso
+HEAD -> verifica se um recurso existe
+OPTIONS -> informa quais métodos/opções são permitidos para um recurso
