@@ -1,21 +1,30 @@
 import { fastify } from 'fastify';
-import { database } from './DatabaseMemory.js';
+import { DatabaseMemory } from './DatabaseMemory.js';
 
 const server = fastify();
+const database = new DatabaseMemory()
 
-server.post('/v', () => {
-    return 'Olá mundo';
+//                                 request do fastify
+server.post('/palavras', (request, reply) => {
+    const { id, palavra } = request.body; //pega o json do routtes.http
+    
+    database.anotar(id, palavra);
+
+    console.log(database.list());
+
+    //                  significa que algo foi criado
+    return reply.status(201).send(); //finaliza o post mandando uma mensagem
 })
 
-server.get('/v', () => {
+server.get('/palavras', () => {
     return 'Olá para vc'
 })
 
-server.put('/v/:id', () => {
+server.put('/palavras/:id', () => {
     return "Olá para todos"
 })
 
-server.delete('/v/:id', () => {
+server.delete('/palavras/:id', () => {
     return "Olá para mim"
 })
 

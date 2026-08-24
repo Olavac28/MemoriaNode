@@ -1,0 +1,13 @@
+É um arquivo usado para enviar requisições HTTP e testar as rotas da sua API.
+Precisa da extenção REST Client.
+
+Olhe como funciona:
+
+Send Request                        //botão de teste
+POST http://localhost:3333/palavras //rota
+Content-Type: application/json      //define como sendo tipo json
+
+//json enviado e que vai cair no parametro request da rota
+{
+    "palavra": "javascript"
+}
