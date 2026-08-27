@@ -1,0 +1,6 @@
+CREATE TABLE pessoas (
+	id SERIAL PRIMARY KEY,
+	nome VARCHAR(50) NOT NULL,
+	idade INTEGER NOT NULL,
+	altura REAL NOT NULL
+);
