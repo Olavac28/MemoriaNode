@@ -2,6 +2,23 @@ POST http://localhost:3333/palavras
 Content-Type: application/json
 
 {
-    "id": 1,
-    "palavra": "feijão"
+    "id": 2,
+    "palavra": "node"
 }
+
+###
+
+GET http://localhost:3333/palavras?search=node
+
+###
+
+PUT http://localhost:3333/palavras/1
+Content-Type: application/json
+
+{
+    "palavra": "c"
+}
+
+###
+
+DELETE http://localhost:3333/palavras/1

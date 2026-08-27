@@ -11,3 +11,22 @@ Content-Type: application/json      //define como sendo tipo json
 {
     "palavra": "javascript"
 }
+
+### //separa as rotas
+
+//                                parametro; fornece um critério/opção; pode ser feito com outros nomes tbm, de preferencia que descreva o que o parâmetro faz
+GET http://localhost:3333/palavras?search=node
+
+###
+
+//                                parametro; identifica um recurso especifico
+PUT http://localhost:3333/palavras/1
+Content-Type: application/json
+
+{
+    "palavra": "c"
+}
+
+###
+
+DELETE http://localhost:3333/palavras/1

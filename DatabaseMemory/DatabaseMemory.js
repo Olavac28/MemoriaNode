@@ -8,7 +8,8 @@ export class DatabaseMemory {
 
     list() {
         //                              só os valores, sem as chaves
-        return Array.from(this.#palavras.values()); //retorna um array
+        //return Array.from(this.#palavras.values()); //retorna um array
+        return Array.from(this.#palavras); //retorna um array
     }
 
     reescrever(id, palavra) {
