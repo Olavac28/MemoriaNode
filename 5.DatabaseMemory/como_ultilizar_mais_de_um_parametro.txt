@@ -1,0 +1,23 @@
+PUT http://localhost:3333/palavras/1/portugues
+
+fastify.put('/palavras/:id/:idioma', async (request, reply) => {
+    const { id, idioma } = request.params;
+
+    console.log(id);
+    console.log(idioma);
+});
+
+-----------------
+
+GET http://localhost:3333/palavras?search=node&idioma=portugues
+
+fastify.get('/palavras', async (request, reply) => {
+    const { search, idioma } = request.query;
+
+    console.log(search);
+    console.log(idioma);
+});
+
+-----------------
+
+PUT http://localhost:3333/palavras/1?idioma=portugues&ativo=true

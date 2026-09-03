@@ -16,7 +16,7 @@ server.post('/palavras', (request, reply) => {
 
 server.get('/palavras', (request) => {
     const palavras = database.list();
-    const search = request.query.search;
+    const search = request.query.search; //pega o query parameter
 
     console.log(search);
 

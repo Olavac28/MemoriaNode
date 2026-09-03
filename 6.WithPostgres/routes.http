@@ -6,3 +6,24 @@ Content-Type: application/json
     "idade": 33,
     "altura": 160
 }
+
+###
+
+GET http://localhost:3333/usuarios
+
+###
+
+GET http://localhost:3333/usuarios/1
+
+###
+PUT http://localhost:3333/usuarios/1
+Content-Type: application/json
+
+{
+    "idade": 13,
+    "altura": 200
+}
+
+###
+
+DELETE http://localhost:3333/usuarios/1

@@ -1,0 +1,2 @@
+Route parameter= "qual recurso?"
+Query parameter = "como quero consultar esse recurso?"
