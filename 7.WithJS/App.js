@@ -32,7 +32,7 @@ server.get('/usuarios/:id', async (request, reply) => {
 server.put('/usuarios/:id', async (request, reply) => {
     const pessoa = new Pessoa();
     const id = Number(request.params.id)
-    const { idade, altura } = request.body;
+    const { idade, altura } = request.body; //wit, pega somente os campos de msm nome
     
     pessoa.alterarRegistro(id, idade, altura);
 
