@@ -1,0 +1,2 @@
+npx next-create-app@latest #NomeDoPrograma -----> cria um projeto Next.js
+npm run dev ------------------------------------> executa o projeto
