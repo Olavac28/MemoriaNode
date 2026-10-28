@@ -6,13 +6,15 @@ function Sla(): number {
 
 function RetornaHTML() { //vira um componente; tem que ser com letra maiúsculo no cmç
   return (
-    <div>
+    <div className="flex flex-col justify-between items-center bg-amber-700 h-[50vh]"
+    style={{color:"#ffffff"}}>
       <div>A</div> 
       <div>B</div>
       <div>C</div>
     </div>
   )
 }
+
 
 export default function Home() {
   //funções e variáveis tbm podem ser colocadas aqui
