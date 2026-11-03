@@ -1,3 +1,5 @@
+import Componente from "./components/Componente";
+
 let variavelGlobal: number = 10;
 
 function Sla(): number {
@@ -7,7 +9,7 @@ function Sla(): number {
 function RetornaHTML() { //vira um componente; tem que ser com letra maiúsculo no cmç
   return (
     <div className="flex flex-col justify-between items-center bg-amber-700 h-[50vh]"
-    style={{color:"#ffffff"}}>
+      style={{color:"#ffffff"}}>
       <div>A</div> 
       <div>B</div>
       <div>C</div>
@@ -27,7 +29,9 @@ export default function Home() {
       {variavelGlobal = variavelGlobal + 1 /*nn pode o ";"; retorna o valor 11*/}  
       {variavelGlobal /*retorna o valor 11*/}
       {Sla() /*retorna o valor 11*/}
-      <RetornaHTML/> {/*o msm que retornaHTML()*/}
+
+      <RetornaHTML/> {/*o msm que retornaHTML(); é um componente*/}
+      <Componente/>
     </div>
   );
 }
