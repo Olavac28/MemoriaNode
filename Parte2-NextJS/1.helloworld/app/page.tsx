@@ -1,4 +1,5 @@
 import Componente from "./components/Componente";
+import Card from "./components/Card";
 
 let variavelGlobal: number = 10;
 
@@ -32,6 +33,7 @@ export default function Home() {
 
       <RetornaHTML/> {/*o msm que retornaHTML(); é um componente*/}
       <Componente/>
+      <Card produto={"teclado"} preço={249.90}/>
     </div>
   );
 }
